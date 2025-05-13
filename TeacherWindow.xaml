@@ -1,0 +1,24 @@
+﻿<Window x:Class="UniversityConsultationsApp.TeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityConsultationsApp"
+        mc:Ignorable="d"
+       Title="Консультации учителя" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="ConsultationsDataGrid" AutoGenerateColumns="False" Margin="10" VerticalAlignment="Top" Height="300">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding ConsultationDate}" />
+                <DataGridTextColumn Header="Продолжительность" Binding="{Binding Duration}" />
+                <DataGridTextColumn Header="Тема" Binding="{Binding Topic}" />
+                <DataGridTextColumn Header="Студент" Binding="{Binding StudentName}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Добавить консультацию" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="150" Click="AddConsultation_Click"/>
+        <Button Content="Редактировать консультацию" HorizontalAlignment="Left" Margin="170,320,0,0" VerticalAlignment="Top" Width="150" Click="EditConsultation_Click"/>
+        <Button Content="Удалить консультацию" HorizontalAlignment="Left" Margin="330,320,0,0" VerticalAlignment="Top" Width="150" Click="DeleteConsultation_Click"/>
+        <Button Content="Редактировать профиль" HorizontalAlignment="Left" Margin="170,365,0,0" VerticalAlignment="Top" Width="150" Click="EditProfile_Click"></Button>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="150" Click="Back_Click"></Button>
+    </Grid>
+</Window>

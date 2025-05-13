@@ -1,0 +1,35 @@
+﻿<Window x:Class="UniversityConsultationsApp.EditStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityConsultationsApp"
+        mc:Ignorable="d"
+        Title="Редактирование студента" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Фамилия:" />
+            <TextBox x:Name="LastNameTextBox" />
+
+            <TextBlock Text="Имя:" />
+            <TextBox x:Name="FirstNameTextBox" />
+
+            <TextBlock Text="Отчество:" />
+            <TextBox x:Name="MiddleNameTextBox" />
+
+            <TextBlock Text="Email:" />
+            <TextBox x:Name="EmailTextBox" />
+
+            <TextBlock Text="Пароль:" />
+            <PasswordBox x:Name="PasswordBox" />
+
+            <TextBlock Text="Специальность:" />
+            <TextBox x:Name="MajorTextBox" />
+
+            <TextBlock Text="Год зачисления:" />
+            <TextBox x:Name="EnrollmentYearTextBox" />
+
+            <Button Content="Сохранить" Click="SaveButton_Click" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

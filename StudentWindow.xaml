@@ -1,0 +1,22 @@
+﻿<Window x:Class="UniversityConsultationsApp.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityConsultationsApp"
+        mc:Ignorable="d"
+        Title="Консультации студента" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="ConsultationsDataGrid" AutoGenerateColumns="False" Margin="10" VerticalAlignment="Top" Height="300">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding ConsultationDate}" />
+                <DataGridTextColumn Header="Продолжительность" Binding="{Binding Duration}" />
+                <DataGridTextColumn Header="Тема" Binding="{Binding Topic}" />
+                <DataGridTextColumn Header="Преподаватель" Binding="{Binding TeacherName}" />
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Редактировать профиль" Width="150" VerticalAlignment="Top" Margin="189,324,461,0" Click="EditProfile_Click"></Button>
+        <Button Content="Назад" Width="150" VerticalAlignment="Top" Margin="10,324,640,0" Click="Back_Click"></Button>
+    </Grid>
+</Window>

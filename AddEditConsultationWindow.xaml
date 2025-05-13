@@ -1,0 +1,16 @@
+﻿<Window x:Class="UniversityConsultationsApp.AddEditConsultationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityConsultationsApp"
+        mc:Ignorable="d"
+       Title="Добавление/редактирование консультации" Height="300" Width="400">
+    <Grid>
+        <TextBox Name="TopicTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="360" Height="30"/>
+        <DatePicker Name="ConsultationDatePicker" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="360"/>
+        <TextBox Name="DurationTextBox" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="360" Height="30"/>
+        <ComboBox Name="StudentComboBox" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="360" Height="30" DisplayMemberPath="FullName"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Width="150" Click="Save_Click"/>
+    </Grid>
+</Window>
